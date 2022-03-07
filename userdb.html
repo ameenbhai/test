@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>DB</title>
+
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-mynav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Users Data</a>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <div class="employee-form">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label>Email Id</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label>Salary</label>
+                <input type="text" name="salary" id="salary">
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" id="city">
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+</div>
+<br/>
+<div class = "employees-table">
+        <table class="list" id="employeeList">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email Id</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+</div>
+<script src="script.js"></script>
+
+    
+  </body>
+</html>
